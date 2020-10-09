@@ -8,7 +8,7 @@ const Header = () => {
         <header>
             <div className="header-content">
                 <img src={Logo} alt="Logo" />
-                <p>Log In</p>
+                <a href="jsx-a11y/anchor-is-valid"><p>Log In</p></a>
                 <Button clasName={"btn-primary"} text="Strart your free trial" />
             </div>
         </header>
