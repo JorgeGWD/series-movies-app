@@ -3,8 +3,18 @@ footer {
 }
 
 footer .footer-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (auto)[3];
+      grid-template-rows: repeat(3, auto);
+  grid-gap: 40px;
   margin: auto;
-  padding: 20px 0px;
+  padding: 40px 0px;
   width: 80%;
+}
+
+footer .footer-content img {
+  max-width: 250px;
+  height: auto;
 }
 /*# sourceMappingURL=Footer.css.map */

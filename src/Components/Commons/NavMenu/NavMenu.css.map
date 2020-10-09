@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACI,SADK,CACL,EAAE,CAAC;EACC,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,aAAa;CAIJ;;AAPlC,AAIQ,SAJC,CACL,EAAE,CAGE,EAAE,CAAC;EACC,UAAU,EAAE,IAAI;CAEI;;AAPhC,AAMY,SANH,CACL,EAAE,CAGE,EAAE,CAEE,CAAC,CAAC;EACE,KAAK,EAAE,IAAI;CAAG",
+    "sources": [
+        "NavMenu.sass"
+    ],
+    "names": [],
+    "file": "NavMenu.css"
+}
