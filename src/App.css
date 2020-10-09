@@ -10,4 +10,9 @@ h1, h2, h3, h4, h5, h6 {
 body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+.btn-primary {
+  color: #fff;
+  background: #000;
+}
 /*# sourceMappingURL=App.css.map */
