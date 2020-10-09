@@ -29,7 +29,7 @@ const Home = () => {
     return (
         <div className="container">
             <Header />
-            <TitleBar />
+            <TitleBar text="Popular Titles" />
             <div className="content home">
                 {
                     data.map((data, key) =>

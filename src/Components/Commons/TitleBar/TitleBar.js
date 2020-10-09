@@ -1,11 +1,11 @@
 import React from 'react'
 import './TitleBar.css'
 
-const TitleBar = () => {
+const TitleBar = ({ text }) => {
     return (
         <div className="title-bar">
             <div className="title-bar-content">
-                <h1>Popular Titles</h1>
+                <h1>{text}</h1>
             </div>
         </div>
     )

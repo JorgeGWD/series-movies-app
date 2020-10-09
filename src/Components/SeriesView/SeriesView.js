@@ -7,7 +7,7 @@ const SeriesView = () => {
     return (
         <div className="container">
             <Header />
-            <TitleBar />
+            <TitleBar text="Popular Series" />
             <div className="content series">
                 <h1>Series</h1>
             </div>

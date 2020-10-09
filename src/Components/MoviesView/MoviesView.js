@@ -7,7 +7,7 @@ const MoviesView = () => {
     return (
         <div className="container">
             <Header />
-            <TitleBar />
+            <TitleBar text="Popular Movies" />
             <div className="content movies">
                 <h1>Movies</h1>
             </div>
