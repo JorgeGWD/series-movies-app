@@ -17,4 +17,8 @@ footer .footer-content img {
   max-width: 250px;
   height: auto;
 }
+
+footer .footer-content p {
+  color: #e0e1e2;
+}
 /*# sourceMappingURL=Footer.css.map */

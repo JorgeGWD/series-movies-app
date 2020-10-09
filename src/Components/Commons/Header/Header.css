@@ -11,7 +11,7 @@ header .header-content {
   display: grid;
   -ms-grid-columns: 1fr auto auto;
       grid-template-columns: 1fr auto auto;
-  grid-gap: 20px;
+  grid-gap: 40px;
   margin: auto;
   padding: 10px 0px;
   width: 90%;
@@ -24,6 +24,12 @@ header .header-content img {
 
 header .header-content a {
   color: #000;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+header .header-content button {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
