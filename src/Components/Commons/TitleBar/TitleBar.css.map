@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,UAAU,CAAC;EACP,KAAK,EAAE,IAAI;EACX,gBAAgB,ECHR,OAAO;EDIf,UAAU,EAAE,GAAG,CAAC,IAAI,CAAC,IAAI,CAAC,kBAAiB;CAIxB;;AAPvB,AAII,UAJM,CAIN,kBAAkB,CAAC;EACf,MAAM,EAAE,IAAI;EACZ,OAAO,EAAE,QAAQ;EACjB,KAAK,EAAE,GAAG;CAAG",
+    "sources": [
+        "TitleBar.sass",
+        "../../../_variables.sass"
+    ],
+    "names": [],
+    "file": "TitleBar.css"
+}
