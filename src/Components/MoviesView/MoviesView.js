@@ -3,17 +3,17 @@ import Footer from '../Commons/Footer/Footer'
 import Header from '../Commons/Header/Header'
 import TitleBar from '../Commons/TitleBar/TitleBar'
 
-const SeriesView = () => {
+const MoviesView = () => {
     return (
         <div className="container">
             <Header />
             <TitleBar />
-            <div className="content series">
-                <h1>Series</h1>
+            <div className="content movies">
+                <h1>Movies</h1>
             </div>
             <Footer />
         </div>
     )
 }
 
-export default SeriesView
+export default MoviesView

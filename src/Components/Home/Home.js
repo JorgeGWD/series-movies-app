@@ -33,8 +33,8 @@ const Home = () => {
             <div className="content home">
                 {
                     data.map((data, key) =>
-                        <Link to={data.link}>
-                            <div className="card" key={key}>
+                        <Link to={data.link} key={key}>
+                            <div className="card">
                                 <img src={data.img} alt={data.title} />
                                 <p>{data.description}</p>
                             </div>

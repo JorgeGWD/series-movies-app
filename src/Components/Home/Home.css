@@ -16,4 +16,8 @@
   max-width: 180px;
   height: auto;
 }
+
+.content.home .card p {
+  color: #000;
+}
 /*# sourceMappingURL=Home.css.map */

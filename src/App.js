@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import Home from './Components/Home/Home';
 import SeriesView from './Components/SeriesView/SeriesView';
+import MoviesView from './Components/MoviesView/MoviesView';
 
 function App() {
 	return (
@@ -14,6 +15,7 @@ function App() {
 			<Switch>
 				<Route exact path="/" component={Home} />
 				<Route path="/series" component={SeriesView} />
+				<Route path="/movies" component={MoviesView} />
 			</Switch>
 		</Router>
 	);
