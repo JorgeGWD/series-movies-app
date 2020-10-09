@@ -1,19 +1,22 @@
 import React from 'react';
 import './App.css';
-import Footer from './Components/Commons/Footer/Footer';
-import Header from './Components/Commons/Header/Header';
-import TitleBar from './Components/Commons/TitleBar/TitleBar';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
 import Home from './Components/Home/Home';
+import SeriesView from './Components/SeriesView/SeriesView';
 
 function App() {
-  return (
-    <div className="App">
-      <Header />
-      <TitleBar />
-      <Home />
-      <Footer />
-    </div>
-  );
+	return (
+		<Router>
+			<Switch>
+				<Route exact path="/" component={Home} />
+				<Route path="/series" component={SeriesView} />
+			</Switch>
+		</Router>
+	);
 }
 
 export default App;
