@@ -1,0 +1,15 @@
+header {
+  background-color: #e0e1e2;
+}
+
+header .header-content {
+  margin: auto;
+  padding: 10px 0px;
+  width: 90%;
+}
+
+header .header-content img {
+  max-width: 150px;
+  height: auto;
+}
+/*# sourceMappingURL=Header.css.map */
