@@ -1,9 +1,10 @@
 {
     "version": 3,
-    "mappings": "ACAA,AAAA,CAAC,CAAC;EACE,MAAM,EAAE,GAAG;EACX,OAAO,EAAE,GAAG;CAAG",
+    "mappings": "ACAA,AAAA,CAAC,CAAC;EACE,MAAM,EAAE,GAAG;EACX,OAAO,EAAE,GAAG;CAAG;;AAEnB,AAAA,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,CAAC;EACnB,WAAW,EAAE,OAAO;CAAG;;ADF3B,AAAA,IAAI,CAAC;EACD,WAAW,EAAE,2DAA2D;CAAG",
     "sources": [
         "App.sass",
-        "_reset.sass"
+        "_reset.sass",
+        "_variables.sass"
     ],
     "names": [],
     "file": "App.css"
