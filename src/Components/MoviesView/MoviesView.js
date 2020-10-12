@@ -1,15 +1,40 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Footer from '../Commons/Footer/Footer'
 import Header from '../Commons/Header/Header'
 import TitleBar from '../Commons/TitleBar/TitleBar'
+import axios from '../Services/axios'
 
 const MoviesView = () => {
+    
+    const [ data, setData ] = useState([])
+
+    useEffect(() => {
+        async function fetchData () {
+            const request = await axios.get()
+            // console.log(request.data.entries)
+
+            setData(request.data.entries)
+            return request.data.entries
+        }
+
+        fetchData()
+    }, [])
+    
+    console.log(data)
+
     return (
         <div className="container">
             <Header />
             <TitleBar text="Popular Movies" />
             <div className="content movies">
-                <h1>Movies</h1>
+                {
+                    data.map( (item, key) => (
+                        <div className="card">
+                            <img src={item.images.url} alt={item.title} />
+                            <p key={key}>{item.title}</p>
+                        </div>
+                    ))
+                }
             </div>
             <Footer />
         </div>
