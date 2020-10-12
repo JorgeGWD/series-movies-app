@@ -36,7 +36,7 @@ const MoviesView = () => {
 
     const indexOfFirstPost = indexOfLastPost - postsPerPage
 
-    const currentPosts = data.slice(indexOfFirstPost, indexOfLastPost)
+    const currentPosts = data.filter(movie => movie.programType === "movie").slice(indexOfFirstPost, indexOfLastPost)
 
     console.log(currentPosts)
 
@@ -50,7 +50,7 @@ const MoviesView = () => {
                 <div className="cards-container">
                     <Card data={currentPosts} loading={loading} />
                 </div>
-                <Pagination postsPerPage={postsPerPage}  totalPosts={data.length} paginate={paginate} />
+                <Pagination postsPerPage={postsPerPage} totalPosts={currentPosts.length} paginate={paginate} />
             </div>
             <Footer />
         </div>
