@@ -4,6 +4,6 @@
   -ms-grid-columns: (180px)[2];
       grid-template-columns: repeat(2, 180px);
   grid-gap: 20px;
-  height: 60vh;
+  min-height: 60vh;
 }
 /*# sourceMappingURL=Home.css.map */

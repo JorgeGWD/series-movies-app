@@ -1,0 +1,8 @@
+.content.movies {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[7];
+      grid-template-columns: repeat(7, 1fr);
+  grid-gap: 20px;
+}
+/*# sourceMappingURL=MoviesView.css.map */

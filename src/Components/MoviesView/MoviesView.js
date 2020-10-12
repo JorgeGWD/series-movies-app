@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import './MoviesView.css'
 import Footer from '../Commons/Footer/Footer'
 import Header from '../Commons/Header/Header'
 import TitleBar from '../Commons/TitleBar/TitleBar'
@@ -29,8 +30,8 @@ const MoviesView = () => {
             <div className="content movies">
                 {
                     data.map( (item, key) => (
-                        <div className="card">
-                            <img src={item.images.url} alt={item.title} />
+                        <div className="card" key={key}>
+                            <img src={item.images["Poster Art"].url} alt={item.title} />
                             <p key={key}>{item.title}</p>
                         </div>
                     ))
