@@ -29,22 +29,4 @@ body {
   color: #fff;
   background: #414141;
 }
-
-.card {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: auto 1fr;
-      grid-template-rows: auto 1fr;
-  grid-gap: 10px;
-}
-
-.card img {
-  width: 100%;
-  max-width: 180px;
-  height: auto;
-}
-
-.card p {
-  color: #000;
-}
 /*# sourceMappingURL=App.css.map */

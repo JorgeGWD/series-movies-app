@@ -5,6 +5,7 @@ import Header from '../Commons/Header/Header'
 import TitleBar from '../Commons/TitleBar/TitleBar'
 import axios from '../Services/axios'
 import Card from '../Commons/Card/Card'
+import Pagination from '../Commons/Pagination/Pagination'
 
 const MoviesView = () => {
     
@@ -39,12 +40,17 @@ const MoviesView = () => {
 
     console.log(currentPosts)
 
+    const paginate = (pageNumber) => setCurrentPage(pageNumber)
+
     return (
         <div className="container">
             <Header />
             <TitleBar text="Popular Movies" />
             <div className="content movies">
-                <Card data={currentPosts} loading={loading} />
+                <div className="cards-container">
+                    <Card data={currentPosts} loading={loading} />
+                </div>
+                <Pagination postsPerPage={postsPerPage}  totalPosts={data.length} paginate={paginate} />
             </div>
             <Footer />
         </div>
