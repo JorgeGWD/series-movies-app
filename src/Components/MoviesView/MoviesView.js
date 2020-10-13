@@ -37,7 +37,7 @@ const MoviesView = () => {
 
     const paginationPosts = data.filter(movie => movie.programType === "movie")
 
-    console.log(currentPosts)
+    console.log(paginationPosts.sort())
 
     const paginate = (pageNumber) => setCurrentPage(pageNumber)
 

@@ -35,4 +35,26 @@ footer .footer-content .foter-left img {
 footer .footer-content .foter-left p {
   color: #e0e1e2;
 }
+
+@media screen and (max-width: 970px) {
+  footer .footer-content {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  footer .footer-content img {
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  footer .footer-content .foter-left .nav-menu ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+}
 /*# sourceMappingURL=Footer.css.map */

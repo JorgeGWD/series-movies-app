@@ -32,4 +32,18 @@
 .cards-container .card p {
   color: #000;
 }
+
+@media screen and (max-width: 870px) {
+  .cards-container {
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .cards-container {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
 /*# sourceMappingURL=Card.css.map */

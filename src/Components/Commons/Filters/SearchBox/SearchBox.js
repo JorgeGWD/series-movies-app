@@ -7,9 +7,7 @@ const SearchBox = ({ data }) => {
 
     const [ filterTitle, setFilterTitle ] = useState([])
 
-    useEffect(() => {
-        
-    }, [])
+    console.log("Movie data is:" + data)
 
     return (
         <div>
