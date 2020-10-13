@@ -21,17 +21,13 @@ const SeriesView = () => {
     useEffect(() => {
         const fetchData = async () => {
             const request = await axios.get()
-            // console.log(request.data.entries)
 
             setData(request.data.entries)
             setLoading(false)
-            // return request.data.entries
         }
 
         fetchData()
     }, [])
-    
-    //console.log(data)
 
     const indexOfLastPost = currentPage * postsPerPage
 
@@ -39,7 +35,7 @@ const SeriesView = () => {
 
     const currentPosts = data.filter(series => series.programType === "series").slice(indexOfFirstPost, indexOfLastPost)
 
-    // console.log(currentPosts)
+    const paginationPosts = data.filter(series => series.programType === "series")
 
     const paginate = (pageNumber) => setCurrentPage(pageNumber)
 
@@ -50,7 +46,7 @@ const SeriesView = () => {
             <div className="content series">
                 <Filters />
                 <Card data={currentPosts} loading={loading} />
-                <Pagination postsPerPage={postsPerPage} totalPosts={currentPosts.length} paginate={paginate} />
+                <Pagination postsPerPage={postsPerPage} totalPosts={paginationPosts.length} paginate={paginate} />
             </div>
             <Footer />
         </div>

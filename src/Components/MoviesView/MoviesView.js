@@ -21,23 +21,21 @@ const MoviesView = () => {
     useEffect(() => {
         const fetchData = async () => {
             const request = await axios.get()
-            // console.log(request.data.entries)
 
             setData(request.data.entries)
             setLoading(false)
-            // return request.data.entries
         }
 
         fetchData()
     }, [])
-    
-    //console.log(data)
 
     const indexOfLastPost = currentPage * postsPerPage
 
     const indexOfFirstPost = indexOfLastPost - postsPerPage
 
     const currentPosts = data.filter(movie => movie.programType === "movie").slice(indexOfFirstPost, indexOfLastPost)
+
+    const paginationPosts = data.filter(movie => movie.programType === "movie")
 
     console.log(currentPosts)
 
@@ -50,7 +48,7 @@ const MoviesView = () => {
             <div className="content movies">
                 <Filters />
                 <Card data={currentPosts} loading={loading} />
-                <Pagination postsPerPage={postsPerPage} totalPosts={currentPosts.length} paginate={paginate} />
+                <Pagination postsPerPage={postsPerPage} totalPosts={paginationPosts.length} paginate={paginate} />
             </div>
             <Footer />
         </div>
