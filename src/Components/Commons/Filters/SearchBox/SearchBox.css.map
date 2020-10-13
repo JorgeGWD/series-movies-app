@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,KAAK,CAAC;EACF,OAAO,EAAE,QAAQ;CAAG",
+    "sources": [
+        "SearchBox.sass"
+    ],
+    "names": [],
+    "file": "SearchBox.css"
+}

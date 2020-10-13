@@ -1,10 +1,15 @@
-.card
+.cards-container
     display: grid
-    grid-template-rows: auto 1fr
-    grid-gap: 10px
-    img
-        width: 100%
-        max-width: 180px
-        height: auto
-    p
-        color: #000
+    grid-template-columns: repeat(7,1fr)
+    grid-gap: 40px 20px
+    margin: 40px 0px
+    .card
+        display: grid
+        grid-template-rows: auto 1fr
+        grid-gap: 10px
+        img
+            width: 100%
+            max-width: 180px
+            height: auto
+        p
+            color: #000

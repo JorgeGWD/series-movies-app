@@ -6,12 +6,13 @@ import TitleBar from '../Commons/TitleBar/TitleBar'
 import axios from '../Services/axios'
 import Card from '../Commons/Card/Card'
 import Pagination from '../Commons/Pagination/Pagination'
+import Filters from '../Commons/Filters/Filters'
 
 const MoviesView = () => {
     
     const [ data, setData ] = useState([])
 
-    const [ loading, setLoading ] = useState(false)
+    const [ loading, setLoading ] = useState(true)
 
     const [ currentPage, setCurrentPage ] = useState(1)
 
@@ -47,9 +48,8 @@ const MoviesView = () => {
             <Header />
             <TitleBar text="Popular Movies" />
             <div className="content movies">
-                <div className="cards-container">
-                    <Card data={currentPosts} loading={loading} />
-                </div>
+                <Filters />
+                <Card data={currentPosts} loading={loading} />
                 <Pagination postsPerPage={postsPerPage} totalPosts={currentPosts.length} paginate={paginate} />
             </div>
             <Footer />

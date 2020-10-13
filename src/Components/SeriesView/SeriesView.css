@@ -1,13 +1,4 @@
 .content.series {
   min-height: 60vh;
 }
-
-.content.series .cards-container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[7];
-      grid-template-columns: repeat(7, 1fr);
-  grid-gap: 40px 20px;
-  margin-bottom: 60px;
-}
 /*# sourceMappingURL=SeriesView.css.map */

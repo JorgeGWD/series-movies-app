@@ -6,6 +6,7 @@ import TitleBar from '../Commons/TitleBar/TitleBar'
 import axios from '../Services/axios'
 import Card from '../Commons/Card/Card'
 import Pagination from '../Commons/Pagination/Pagination'
+import Filters from '../Commons/Filters/Filters'
 
 const SeriesView = () => {
 
@@ -38,7 +39,7 @@ const SeriesView = () => {
 
     const currentPosts = data.filter(series => series.programType === "series").slice(indexOfFirstPost, indexOfLastPost)
 
-    console.log(currentPosts)
+    // console.log(currentPosts)
 
     const paginate = (pageNumber) => setCurrentPage(pageNumber)
 
@@ -47,9 +48,8 @@ const SeriesView = () => {
             <Header />
             <TitleBar text="Popular Series" />
             <div className="content series">
-                <div className="cards-container">
-                    <Card data={currentPosts} loading={loading} />
-                </div>
+                <Filters />
+                <Card data={currentPosts} loading={loading} />
                 <Pagination postsPerPage={postsPerPage} totalPosts={currentPosts.length} paginate={paginate} />
             </div>
             <Footer />

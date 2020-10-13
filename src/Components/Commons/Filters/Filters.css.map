@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,QAAQ,CAAC;EACL,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,aAAa;CAAG",
+    "sources": [
+        "Filters.sass"
+    ],
+    "names": [],
+    "file": "Filters.css"
+}
