@@ -1,3 +1,11 @@
+.loading {
+  padding: 40px;
+}
+
+.loading p {
+  text-align: center;
+}
+
 .cards-container {
   display: -ms-grid;
   display: grid;

@@ -12,7 +12,7 @@ const SeriesView = () => {
 
     const [ data, setData ] = useState([])
 
-    const [ loading, setLoading ] = useState(false)
+    const [ loading, setLoading ] = useState(true)
 
     const [ currentPage, setCurrentPage ] = useState(1)
 

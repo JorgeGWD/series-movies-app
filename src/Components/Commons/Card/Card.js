@@ -2,15 +2,15 @@ import React from 'react'
 import './Card.css'
 
 const Card = ({ data, loading }) => {
-
-    console.log(loading)
     
     return (
-        <div className="cards-container">
+        <>
             {loading ? (
-                <p className="loading">Loading...</p>
+                <div className="loading">
+                    <p>Loading...</p>
+                </div>
             ) : (
-                <>
+                <div className="cards-container">
                     {
                         data.map( (item, key) => (
                             <div className="card" key={key}>
@@ -19,9 +19,9 @@ const Card = ({ data, loading }) => {
                             </div>
                         ))
                     }
-                </>
+                </div>
             )}
-        </div>
+        </>
       );
 }
 
