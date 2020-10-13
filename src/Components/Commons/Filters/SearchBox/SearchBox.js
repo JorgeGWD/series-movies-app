@@ -1,13 +1,9 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import './SearchBox.css'
 
-const SearchBox = ({ data }) => {
+const SearchBox = () => {
 
-    const [ search, setSearch ] = useState('')
-
-    const [ filterTitle, setFilterTitle ] = useState([])
-
-    console.log("Movie data is:" + data)
+    const [ setSearch ] = useState('')
 
     return (
         <div>

@@ -16,7 +16,7 @@ const MoviesView = () => {
 
     const [ currentPage, setCurrentPage ] = useState(1)
 
-    const [ postsPerPage, setPostsPerPage ] = useState(21)
+    const [ postsPerPage ] = useState(21)
 
     useEffect(() => {
         const fetchData = async () => {
@@ -36,8 +36,6 @@ const MoviesView = () => {
     const currentPosts = data.filter(movie => movie.programType === "movie").slice(indexOfFirstPost, indexOfLastPost)
 
     const paginationPosts = data.filter(movie => movie.programType === "movie")
-
-    console.log(paginationPosts.sort())
 
     const paginate = (pageNumber) => setCurrentPage(pageNumber)
 

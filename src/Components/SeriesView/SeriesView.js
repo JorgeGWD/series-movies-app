@@ -16,7 +16,7 @@ const SeriesView = () => {
 
     const [ currentPage, setCurrentPage ] = useState(1)
 
-    const [ postsPerPage, setPostsPerPage ] = useState(21)
+    const [ postsPerPage ] = useState(21)
 
     useEffect(() => {
         const fetchData = async () => {
